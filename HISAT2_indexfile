@@ -2,3 +2,5 @@
 
 ./hisat2_extract_splice_sites.py ../reference_genome/Homo_sapiens.GRCh38.104.gtf > ../index_files/genome.ss
 
+./hisat2_extract_exons.py ../reference_genome/Homo_sapiens.GRCh38.104.gtf > ../index_files/genome.exon
+
