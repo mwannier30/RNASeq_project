@@ -15,7 +15,7 @@ mkdir /data/courses/rnaseq/breastcancer_de/maelle_workspace/Quality_check/result
 cd /data/courses/rnaseq/breastcancer_de/reads/ ## enter the directory which contains the reads
 
 
-for i in `ls Normal*`; do ## loop over files from the reads directory that begin with Normal => Change if you want to check another subtype of human breastcancer.
+for i in `ls Normal* HER*`; do ## loop over files from the reads directory which belong to the Normal or the HER subtype of human breastcancer 
         cd /data/courses/rnaseq/breastcancer_de/maelle_workspace/Quality_check/FastQC ## Enter FastQC directory which contains the executable file for fastQC
         ./fastqc /data/courses/rnaseq/breastcancer_de/reads/$i -o ../result/ ## Launch analysis on one of the reads file and save output into the new result directory
 done
