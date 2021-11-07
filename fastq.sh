@@ -1,3 +1,5 @@
+##FastQC v0.11.9 (win/Linux file)
+
 #!/bin/bash
 
 #SBATCH --cpus-per-task=1
