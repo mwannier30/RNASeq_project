@@ -1,0 +1,4 @@
+## Version: HISAT2 2.2.1
+
+./hisat2_extract_splice_sites.py ../reference_genome/Homo_sapiens.GRCh38.104.gtf > ../index_files/genome.ss
+
