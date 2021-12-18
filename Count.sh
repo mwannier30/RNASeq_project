@@ -14,4 +14,4 @@ module add UHTS/Analysis/subread/2.0.1;
 
 featureCounts -a ../Mapping/reference_genome/Homo_sapiens.GRCh38.104.gtf -o ./read_count ../Mapping/outMap/*_sorted.bam
 
-cut -f 1,7-12 ./read_count | tail -n +1 > ./cut_read_count
+cut -f 1,7-12 ./read_count | tail -n +2 > ./cut_read_count
