@@ -1,4 +1,4 @@
-## Version: HISAT2 2.2.1
+##Version: HISAT2 2.1.0
 
 #!/bin/bash
 
@@ -12,11 +12,5 @@
 #SBATCH --error=/home/mwannier/error_%j.e
 
 cd hisat2-2.1.0/
-
-./hisat2_extract_splice_sites.py ../reference_genome/Homo_sapiens.GRCh38.104.gtf > ../index_files/genome.ss
-
-./hisat2_extract_exons.py ../reference_genome/Homo_sapiens.GRCh38.104.gtf > ../index_files/genome.exon
-
-##Version: HISAT2 2.1.0
 
 ./hisat2-build -p 16 ../reference_genome/*.fa ../index_files/genome_index
