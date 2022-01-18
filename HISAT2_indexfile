@@ -11,6 +11,8 @@
 #SBATCH --output=/home/mwannier/output_%j.o
 #SBATCH --error=/home/mwannier/error_%j.e
 
+wget https://cloud.biohpc.swmed.edu/index.php/s/hisat2-210-source/download
+
 cd hisat2-2.1.0/
 
 ./hisat2-build -p 16 ../reference_genome/*.fa ../index_files/genome_index
