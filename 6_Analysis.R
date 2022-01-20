@@ -14,7 +14,7 @@ library("cowplot")
 
 ##read the resulting featureCounts file created in the 'Count.sh' step, change the row names with the genes name and remove the column containing the genes name
 
-cts <- read.table("C:/Users/Maëlle/Documents/Master/RNA-seq/Project/cut_read_count", h=T, sep='\t')
+cts <- read.table("{PATH}/cut_read_count", h=T, sep='\t')
 row.names(cts) <- cts$Geneid
 cts <- as.matrix(cts[,-1])
 
